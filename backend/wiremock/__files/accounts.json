@@ -1,0 +1,26 @@
+{
+  "sme_id": "TH-SME-001",
+  "accounts": [
+    {
+      "account_id": "ACC-KTB-001",
+      "account_type": "deposit",
+      "bank": "KTB",
+      "account_number": "xxx-x-xxxxx-1",
+      "currency": "THB",
+      "balance": 280000.00,
+      "available_balance": 280000.00,
+      "linked_at": "2025-01-15T08:00:00Z"
+    },
+    {
+      "account_id": "ACC-KTB-CC-001",
+      "account_type": "credit_card",
+      "bank": "KTB",
+      "account_number": "xxxx-xxxx-xxxx-4567",
+      "currency": "THB",
+      "credit_limit": 100000.00,
+      "outstanding_balance": 45000.00,
+      "available_credit": 55000.00,
+      "linked_at": "2025-01-15T08:00:00Z"
+    }
+  ]
+}

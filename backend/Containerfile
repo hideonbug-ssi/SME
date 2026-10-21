@@ -1,0 +1,27 @@
+# Stage 1 — builder: install Python dependencies
+FROM python:3.11-slim AS builder
+
+WORKDIR /build
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir --prefix=/install -r requirements.txt
+
+
+# Stage 2 — runtime: lean image with only what's needed to run
+FROM python:3.11-slim AS runtime
+
+ARG APP_PORT=8000
+ENV APP_PORT=${APP_PORT}
+
+WORKDIR /app
+
+# Copy installed packages and executables from the builder stage
+COPY --from=builder /install/lib/python3.11/site-packages /usr/local/lib/python3.11/site-packages
+COPY --from=builder /install/bin /usr/local/bin
+
+# Copy application source
+COPY . .
+
+EXPOSE ${APP_PORT}
+
+CMD ["python", "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

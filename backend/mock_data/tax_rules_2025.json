@@ -1,0 +1,77 @@
+{
+  "tax_year": 2025,
+  "disclaimer": "Illustrative values only — not certified tax advice. Verify with a qualified Thai tax professional.",
+  "pit": {
+    "income_types": {
+      "40_1_employment": { "expense_deduction_rate": 0.50, "max_deduction": 100000 },
+      "40_2_freelance": { "expense_deduction_rate": 0.50, "max_deduction": 100000 },
+      "40_3_goodwill": { "expense_deduction_rate": 0.50, "max_deduction": 100000 },
+      "40_4_interest_dividend": { "expense_deduction_rate": 0.00, "max_deduction": 0 },
+      "40_5_rent": { "expense_deduction_rate": 0.30, "max_deduction": null },
+      "40_6_professional": { "expense_deduction_rate": 0.60, "max_deduction": null },
+      "40_7_contract": { "expense_deduction_rate": 0.70, "max_deduction": null },
+      "40_8_other": { "expense_deduction_rate": 0.60, "max_deduction": null }
+    },
+    "personal_allowances": {
+      "personal": 60000,
+      "spouse": 60000,
+      "child_per_child": 30000,
+      "child_education_additional": 2000,
+      "parent_per_parent": 30000,
+      "disabled_dependent": 60000,
+      "life_insurance_max": 100000,
+      "health_insurance_max": 25000,
+      "provident_fund_max": 500000,
+      "rmf_max_rate": 0.30,
+      "rmf_max_absolute": 500000,
+      "ssf_max_rate": 0.30,
+      "ssf_max_absolute": 200000,
+      "combined_ssf_rmf_thai_esg_cap": 500000,
+      "thai_esg_max_rate": 0.30,
+      "thai_esg_max_absolute": 300000,
+      "social_security_max": 9000,
+      "mortgage_interest_max": 100000,
+      "donation_general_max_rate": 0.10,
+      "donation_edu_max_rate": 0.10
+    },
+    "tax_brackets": [
+      { "min": 0, "max": 150000, "rate": 0.00 },
+      { "min": 150001, "max": 300000, "rate": 0.05 },
+      { "min": 300001, "max": 500000, "rate": 0.10 },
+      { "min": 500001, "max": 750000, "rate": 0.15 },
+      { "min": 750001, "max": 1000000, "rate": 0.20 },
+      { "min": 1000001, "max": 2000000, "rate": 0.25 },
+      { "min": 2000001, "max": 5000000, "rate": 0.30 },
+      { "min": 5000001, "max": null, "rate": 0.35 }
+    ]
+  },
+  "cit": {
+    "sme_thresholds": {
+      "max_paid_up_capital": 5000000,
+      "max_annual_revenue": 30000000
+    },
+    "sme_brackets": [
+      { "min": 0, "max": 300000, "rate": 0.00 },
+      { "min": 300001, "max": 3000000, "rate": 0.15 },
+      { "min": 3000001, "max": null, "rate": 0.20 }
+    ],
+    "standard_rate": 0.20,
+    "loss_carryforward_years": 5
+  },
+  "vat": {
+    "registration_threshold": 1800000,
+    "standard_rate": 0.07,
+    "zero_rated_exports": true
+  },
+  "sbt": {
+    "applicable_activities": ["banking", "finance", "life_insurance", "pawn_brokerage", "real_estate_sale"],
+    "rates": {
+      "banking": 0.03,
+      "finance": 0.03,
+      "life_insurance": 0.025,
+      "pawn_brokerage": 0.025,
+      "real_estate_sale": 0.03
+    },
+    "base": "gross_receipts"
+  }
+}

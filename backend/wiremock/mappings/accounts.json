@@ -1,0 +1,36 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "urlPattern": "/api/v1/sources\\?sme_id=.+"
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json" },
+        "bodyFileName": "accounts.json",
+        "delayDistribution": {
+          "type": "uniform",
+          "lower": 100,
+          "upper": 250
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "/api/v1/accounts/TH-SME-001"
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json" },
+        "bodyFileName": "accounts.json",
+        "delayDistribution": {
+          "type": "uniform",
+          "lower": 100,
+          "upper": 250
+        }
+      }
+    }
+  ]
+}

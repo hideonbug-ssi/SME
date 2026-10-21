@@ -1,0 +1,36 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "urlPattern": "/api/v1/invoices/payable\\?sme_id=.+"
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json" },
+        "bodyFileName": "invoices_payable.json",
+        "delayDistribution": {
+          "type": "uniform",
+          "lower": 100,
+          "upper": 250
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "urlPattern": "/api/v1/invoices/receivable\\?sme_id=.+"
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json" },
+        "bodyFileName": "invoices_receivable.json",
+        "delayDistribution": {
+          "type": "uniform",
+          "lower": 100,
+          "upper": 250
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "sme_id": "TH-SME-001",
+  "invoices": [
+    {
+      "invoice_id": "PAY-001",
+      "direction": "payable",
+      "counterparty_name": "TechSupplies Co Ltd",
+      "invoice_no": "TS-2026-0089",
+      "amount_thb": 45000.00,
+      "amount_paid_thb": 0.00,
+      "issue_date": "2026-06-20",
+      "due_date": "2026-07-20",
+      "payment_status": "unpaid"
+    },
+    {
+      "invoice_id": "PAY-002",
+      "direction": "payable",
+      "counterparty_name": "Office Properties Ltd",
+      "invoice_no": "OP-2026-Q3-001",
+      "amount_thb": 35000.00,
+      "amount_paid_thb": 0.00,
+      "issue_date": "2026-07-01",
+      "due_date": "2026-08-01",
+      "payment_status": "unpaid"
+    },
+    {
+      "invoice_id": "PAY-003",
+      "direction": "payable",
+      "counterparty_name": "Cloud Infrastructure Solutions",
+      "invoice_no": "CIS-INV-2026-0234",
+      "amount_thb": 180000.00,
+      "amount_paid_thb": 0.00,
+      "issue_date": "2026-07-10",
+      "due_date": "2026-07-26",
+      "payment_status": "unpaid"
+    }
+  ]
+}

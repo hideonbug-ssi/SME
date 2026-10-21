@@ -1,0 +1,20 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "urlPattern": "/api/v1/transactions\\?sme_id=.+"
+      },
+      "response": {
+        "status": 200,
+        "headers": { "Content-Type": "application/json" },
+        "bodyFileName": "transactions.json",
+        "delayDistribution": {
+          "type": "uniform",
+          "lower": 100,
+          "upper": 250
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "invoice_id": "INV-001",
+    "counterparty_name": "Local Retailer Group",
+    "customer_email": "accounts@localretailer.th",
+    "invoice_no": "SME-INV-2026-0035",
+    "amount_thb": 32000.00,
+    "amount_paid_thb": 0.00,
+    "issue_date": "2026-06-25",
+    "due_date": "2026-07-09",
+    "payment_status": "unpaid",
+    "last_reminder_sent": null
+  },
+  {
+    "invoice_id": "INV-002",
+    "counterparty_name": "MegaCorp Thailand Ltd",
+    "customer_email": "ap@megacorp.th",
+    "invoice_no": "SME-INV-2026-0041",
+    "amount_thb": 120000.00,
+    "amount_paid_thb": 0.00,
+    "issue_date": "2026-07-01",
+    "due_date": "2026-07-30",
+    "payment_status": "unpaid",
+    "last_reminder_sent": null
+  },
+  {
+    "invoice_id": "INV-003",
+    "counterparty_name": "Bangkok Tech Partners Co Ltd",
+    "customer_email": "finance@bkktechpartners.co.th",
+    "invoice_no": "SME-INV-2026-0030",
+    "amount_thb": 55000.00,
+    "amount_paid_thb": 55000.00,
+    "issue_date": "2026-06-01",
+    "due_date": "2026-07-01",
+    "payment_status": "paid",
+    "last_reminder_sent": null
+  },
+  {
+    "invoice_id": "INV-004",
+    "counterparty_name": "StartupXYZ Co Ltd",
+    "customer_email": "finance@startupxyz.co.th",
+    "invoice_no": "SME-INV-2026-0028",
+    "amount_thb": 85000.00,
+    "amount_paid_thb": 40000.00,
+    "issue_date": "2026-05-15",
+    "due_date": "2026-05-30",
+    "payment_status": "partial",
+    "last_reminder_sent": null
+  },
+  {
+    "invoice_id": "INV-005",
+    "counterparty_name": "Eastern Logistics Co Ltd",
+    "customer_email": "ar@easternlogistics.th",
+    "invoice_no": "SME-INV-2026-0018",
+    "amount_thb": 62000.00,
+    "amount_paid_thb": 0.00,
+    "issue_date": "2026-03-15",
+    "due_date": "2026-04-10",
+    "payment_status": "unpaid",
+    "last_reminder_sent": "2026-07-14"
+  },
+  {
+    "invoice_id": "INV-006",
+    "counterparty_name": "Horizon Digital Solutions Ltd",
+    "customer_email": "billing@horizondigital.co.th",
+    "invoice_no": "SME-INV-2026-0033",
+    "amount_thb": 48000.00,
+    "amount_paid_thb": 0.00,
+    "issue_date": "2026-06-15",
+    "due_date": "2026-07-04",
+    "payment_status": "unpaid",
+    "last_reminder_sent": null
+  }
+]
